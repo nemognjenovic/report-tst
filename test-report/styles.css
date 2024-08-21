@@ -47,6 +47,7 @@ footer {
 body {
     margin: 0;
     padding-top: 0px; /* Ensure content does not overlap the header image */
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 }
 
 /* Cover Page */
@@ -77,10 +78,6 @@ body {
 /**/
 
 .content-page {
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: center;
-    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     display: flex;
   } 
 

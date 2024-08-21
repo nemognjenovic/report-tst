@@ -1,0 +1,144 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    page-break-before: always;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+/* Cover Page */
+.cover-page {
+    width: 100%;
+    height: 100vh;
+    background: url('cover-image.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    page-break-after: always;
+}
+
+.cover-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    width: 100%;
+}
+
+/* Chapter Start */
+.chapter-start {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.chapter-header {
+    background: url('chapter-start-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 4rem 0;
+    margin: 0;
+}
+
+.chapter-header h2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 1rem 2rem;
+}
+
+.content {
+    padding: 2rem;
+}
+
+/* Subsequent Chapter Pages */
+.chapter-page {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.chapter-subheader {
+    background: url('chapter-subheader-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 0;
+    margin: 0;
+}
+
+.chapter-subheader h3 {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+/* Image with Text */
+.image-with-text {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.image-with-text img {
+    max-width: 40%;
+    margin-right: 1rem;
+}
+
+.image-with-text p {
+    flex: 1;
+}
+
+/* Bullet Points */
+.bullet-points {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bullet-points li {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.bullet-points li span {
+    font-size: 1.5rem;
+    color: green;
+    margin-right: 1rem;
+}
+
+/* Tables */
+.sample-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+.sample-table th, .sample-table td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.sample-table th {
+    background-color: #f2f2f2;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 1rem 0;
+    color: #333;
+    font-size: 0.9rem;
+}

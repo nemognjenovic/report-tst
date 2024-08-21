@@ -80,9 +80,6 @@ body {
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     display: flex;
   } 

@@ -18,23 +18,16 @@ body {
 .cover-page {
     width: 210mm; /* A4 width */
     height: 297mm; /* A4 height */
+    background-image: url('cover-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative; /* Ensures full page coverage */
-}
-
-.cover-image {
-    width: 210mm; /* A4 width */
-    height: 297mm; /* A4 height */
-    background-image: url('cover-image.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute; 
-    z-index: 1;
 }
 
 .cover-text {
@@ -44,8 +37,6 @@ body {
     width: 100%;
     max-width: 600px; /* Adjust width as needed */
     text-align: center;
-    position: relative;
-    z-index: 2;
 }
 
 
@@ -59,7 +50,7 @@ body {
     background-image: url('chapter-start-image.jpg');
     background-size: cover;
     background-position: center;
-    height: 400px; /* Fixed height based on image dimensions */
+    height: 214px; /* Fixed height based on image dimensions */
     width: 100%;
     margin: 0; /* No margins */
     display: flex;

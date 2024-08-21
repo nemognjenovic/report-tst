@@ -18,12 +18,27 @@
         padding: 0;
         padding-top: 28px;
     }
-}
+    @bottom-center {
+        content: element(footer);
+    }
 
+    @bottom-center {
+        content: "cosmicorion.com";
+        font-family: Arial, sans-serif;
+        font-size: 0.9rem;
+        color: #333;
+    }
+}
+footer {
+    position: running(footer);
+}
 /* Exclude the header image from the first page */
 @page :first {
     margin: 0mm; /* Ensure no extra margin for the first page */
     @top-left {
+        content: none; /* Remove the header image from the first page */
+    }
+    @bottom-center {
         content: none; /* Remove the header image from the first page */
     }
 }

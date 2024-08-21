@@ -59,7 +59,7 @@ body {
     background-image: url('chapter-start-image.jpg');
     background-size: cover;
     background-position: center;
-    height: 214px; /* Fixed height based on image dimensions */
+    height: 400px; /* Fixed height based on image dimensions */
     width: 100%;
     margin: 0; /* No margins */
     display: flex;

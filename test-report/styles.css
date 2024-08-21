@@ -1,9 +1,3 @@
-@page {
-    size: A4;
-    margin: 20mm; /* Regular margins for paragraphs */
-}
-
-
 body {
     margin: 0; /* Ensure body has no margin to avoid unexpected spacing */
 }

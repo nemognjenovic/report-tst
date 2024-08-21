@@ -1,0 +1,133 @@
+@page {
+    size: A4;
+    margin: 20mm;
+}
+
+@page :first {
+    margin: 0;
+}
+
+@page :left {
+    margin: 20mm;
+}
+
+@page :right {
+    margin: 20mm;
+}
+
+@page :chapter-start {
+    margin: 20mm;
+    @bottom-center {
+        content: "domain.com";
+        font-size: 12pt;
+    }
+}
+
+@page :regular {
+    margin: 20mm;
+    @bottom-center {
+        content: "domain.com";
+        font-size: 12pt;
+    }
+}
+
+/* Cover Page Styles */
+.cover-page {
+    height: 100vh;
+    background-image: url('cover-image.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20mm;
+}
+
+.cover-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 100%;
+}
+
+/* Chapter Start Header */
+.chapter-start {
+    page: chapter-start;
+}
+
+.chapter-start .chapter-header {
+    background-image: url('chapter-header.jpg');
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 20mm;
+    margin: 0 -20mm;
+}
+
+/* Regular Page Header */
+.regular-page {
+    page: regular;
+}
+
+.regular-page .simple-header {
+    background-color: #f0f0f0;
+    padding: 10mm;
+    margin: 0 -20mm;
+    text-align: center;
+}
+
+/* Full Width Image */
+.full-width-image {
+    width: 100%;
+    margin: 20mm 0;
+}
+
+/* Div with Image and Text */
+.image-text {
+    display: flex;
+    align-items: center;
+    gap: 10mm;
+    margin: 20mm 0;
+}
+
+.image-text img {
+    width: 50mm;
+}
+
+/* Custom List */
+.custom-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.custom-list li {
+    padding: 5mm 0;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20mm 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10mm;
+    text-align: left;
+}
+
+table img {
+    width: 30mm;
+}
+
+/* Centered Image */
+.centered-image {
+    text-align: center;
+    margin: 20mm 0;
+}
+
+.centered-image img {
+    width: 80mm;
+}

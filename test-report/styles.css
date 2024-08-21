@@ -1,11 +1,18 @@
-/* Define styles for the cover page only */
-@page :first {
+@page {
     size: A4;
-    margin: 0; /* No margins for the cover page */
+    margin: 20mm; /* Regular margins for paragraphs */
 }
+
 
 body {
     margin: 0; /* Ensure body has no margin to avoid unexpected spacing */
+}
+/*FIRST PAGE*/
+
+/* Define styles for the cover page only */
+@page :first {
+    size: A4;
+    margin: 0mm; /* No margins for the cover page */
 }
 
 .cover-page {
@@ -30,4 +37,82 @@ body {
     width: 100%;
     max-width: 600px; /* Adjust width as needed */
     text-align: center;
+}
+
+
+/*CHAPTER*/
+/* Chapter Start Header */
+.chapter-start {
+    page: chapter-start;
+}
+
+.chapter-start .chapter-header {
+    background-image: url('chapter-start-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 214px; /* Fixed height based on image dimensions */
+    width: 100%;
+    margin: 0; /* No margins */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.chapter-start .chapter-header h1 {
+    margin: 0;
+    font-size: 24pt;
+}
+
+/* Chapter Subheader for subsequent pages */
+.chapter-content .chapter-subheader {
+    page: chapter-content;
+    background-image: url('chapter-subheader-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 28px; /* Fixed height based on image dimensions */
+    width: 100%;
+    margin: 0; /* No margins */
+}
+
+/* General Styles for paragraphs */
+p {
+    margin: 0 0 10mm; /* Space between paragraphs */
+    line-height: 1.5;
+}
+
+
+@page :chapter-start {
+    size: A4;
+    margin: 0; /* No margins for header images */
+    @top-left {
+        content: "";
+    }
+    @top-right {
+        content: "";
+    }
+    @bottom-left {
+        content: "";
+    }
+    @bottom-right {
+        content: "";
+    }
+}
+
+@page :chapter-content {
+    size: A4;
+    margin: 20mm; /* Regular margins for paragraphs */
+    @top-left {
+        content: "";
+    }
+    @top-right {
+        content: "";
+    }
+    @bottom-left {
+        content: "";
+    }
+    @bottom-right {
+        content: "";
+    }
 }

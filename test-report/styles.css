@@ -1,7 +1,7 @@
 /* Default styles for all pages */
 @page {
     size: A4;
-    margin: 0mm;
+    margin: 20mm;
 }
 
 /* Define styles for the header image on all pages except the first */
@@ -16,6 +16,7 @@
         width: 100%; /* Width of the header image spans the full page width */
         margin: 0;
         padding: 0;
+        padding-top: 28px;
     }
 }
 
@@ -30,7 +31,7 @@
 /* Style for body to ensure no extra margins */
 body {
     margin: 0;
-    padding-top: 28px; /* Ensure content does not overlap the header image */
+    padding-top: 0px; /* Ensure content does not overlap the header image */
 }
 
 /* Cover Page */

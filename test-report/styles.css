@@ -76,6 +76,17 @@ body {
 
 /**/
 
+.content-page {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    display: flex;
+  } 
+
 .heading-1 {
     color: #333;
     text-align: left;

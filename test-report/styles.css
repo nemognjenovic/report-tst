@@ -16,18 +16,22 @@ body {
 }
 
 .cover-page {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ensures full page coverage */
+}
+
+.cover-image {
     width: 210mm; /* A4 width */
     height: 297mm; /* A4 height */
     background-image: url('cover-image.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute; /* Ensures full page coverage */
+    position: absolute;
 }
 
 .cover-text {
@@ -37,6 +41,8 @@ body {
     width: 100%;
     max-width: 600px; /* Adjust width as needed */
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 

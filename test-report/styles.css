@@ -1,14 +1,39 @@
-body {
-    margin: 0; /* Ensure body has no margin to avoid unexpected spacing */
-}
-/*FIRST PAGE*/
-
-/* Define styles for the cover page only */
-@page :first {
+/* Default styles for all pages */
+@page {
     size: A4;
-    margin: 0mm; /* No margins for the cover page */
+    margin: 0mm;
 }
 
+/* Define styles for the header image on all pages except the first */
+@page {
+    @top-left {
+        content: "";
+        display: block;
+        background-image: url('chapter-subheader-image.jpg');
+        background-size: 100% 28px; /* Scale the image to 100% width and 28px height */
+        background-repeat: no-repeat;
+        height: 28px; /* Height of the header image */
+        width: 100%; /* Width of the header image spans the full page width */
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Exclude the header image from the first page */
+@page :first {
+    margin: 0mm; /* Ensure no extra margin for the first page */
+    @top-left {
+        content: none; /* Remove the header image from the first page */
+    }
+}
+
+/* Style for body to ensure no extra margins */
+body {
+    margin: 0;
+    padding-top: 28px; /* Ensure content does not overlap the header image */
+}
+
+/* Cover Page */
 .cover-page {
     width: 210mm; /* A4 width */
     height: 297mm; /* A4 height */
@@ -31,85 +56,4 @@ body {
     width: 100%;
     max-width: 600px; /* Adjust width as needed */
     text-align: center;
-}
-
-
-/*CHAPTER*/
-/* Define styles for all pages */
-@page {
-    size: A4;
-    margin: 20mm; /* Regular margins for paragraphs */
-}
-
-/* Define styles for chapter start page */
-@page :chapter-start {
-    size: A4;
-    margin: 0; /* No margins for the chapter start page */
-}
-
-.chapter-start {
-    page: chapter-start;
-    padding: 0; /* Ensure no padding */
-}
-
-.chapter-start .chapter-header {
-    background-image: url('chapter-start-image.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 214px; /* Fixed height based on image dimensions */
-    width: 100%;
-    margin: 0; /* No margins */
-    padding: 0; /* No padding */
-    position: relative; /* Ensure header is positioned correctly */
-}
-
-.chapter-start .chapter-header h1 {
-    margin: 0;
-    font-size: 24pt;
-    color: white;
-    position: absolute; /* Position text over image */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-/* Define styles for subsequent pages */
-@page :chapter-content {
-    size: A4;
-    margin: 20mm; /* Regular margins for content pages */
-}
-
-.chapter-content {
-    page: chapter-content;
-    padding: 0; /* Ensure no padding */
-}
-
-.chapter-content .chapter-subheader {
-    background-image: url('chapter-subheader-image.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 28px; /* Fixed height based on image dimensions */
-    width: 100%;
-    margin: 0; /* No margins */
-    padding: 0; /* No padding */
-    position: relative; /* Ensure subheader is positioned correctly */
-}
-
-/* General Styles for paragraphs */
-p {
-    margin: 0 0 10mm; /* Space between paragraphs */
-    line-height: 1.5;
-}
-
-/* Ensure no extra margin/padding from the body */
-body {
-    margin: 0;
-    padding: 0;
-}
-
-/* Ensure the content div does not add extra margins */
-.chapter-start, .chapter-content {
-    margin: 0;
-    padding: 0;
 }

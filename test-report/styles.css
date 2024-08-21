@@ -36,6 +36,18 @@ body {
 
 /*CHAPTER*/
 /* Chapter Start Header */
+/* Define styles for all pages */
+@page {
+    size: A4;
+    margin: 20mm; /* Regular margins for paragraphs */
+}
+
+/* Define styles for chapter start page */
+@page :chapter-start {
+    size: A4;
+    margin: 0; /* Remove margins for chapter start */
+}
+
 .chapter-start {
     page: chapter-start;
 }
@@ -47,6 +59,7 @@ body {
     height: 214px; /* Fixed height based on image dimensions */
     width: 100%;
     margin: 0; /* No margins */
+    padding: 0; /* No padding */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,15 +72,24 @@ body {
     font-size: 24pt;
 }
 
-/* Chapter Subheader for subsequent pages */
-.chapter-content .chapter-subheader {
+/* Define styles for subsequent pages */
+@page :chapter-content {
+    size: A4;
+    margin: 20mm; /* Regular margins for content pages */
+}
+
+.chapter-content {
     page: chapter-content;
+}
+
+.chapter-content .chapter-subheader {
     background-image: url('chapter-subheader-image.jpg');
     background-size: cover;
     background-position: center;
     height: 28px; /* Fixed height based on image dimensions */
     width: 100%;
     margin: 0; /* No margins */
+    padding: 0; /* No padding */
 }
 
 /* General Styles for paragraphs */
@@ -76,37 +98,14 @@ p {
     line-height: 1.5;
 }
 
-
-@page :chapter-start {
-    size: A4;
-    margin: 0; /* No margins for header images */
-    @top-left {
-        content: "";
-    }
-    @top-right {
-        content: "";
-    }
-    @bottom-left {
-        content: "";
-    }
-    @bottom-right {
-        content: "";
-    }
+/* Ensure no extra margin/padding from the body */
+body {
+    margin: 0;
+    padding: 0;
 }
 
-@page :chapter-content {
-    size: A4;
-    margin: 20mm; /* Regular margins for paragraphs */
-    @top-left {
-        content: "";
-    }
-    @top-right {
-        content: "";
-    }
-    @bottom-left {
-        content: "";
-    }
-    @bottom-right {
-        content: "";
-    }
+/* Ensure the content div does not add extra margins */
+.chapter-start, .chapter-content {
+    margin: 0;
+    padding: 0;
 }

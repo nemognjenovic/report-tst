@@ -79,7 +79,7 @@ body {
 .content-page {
     flex-flow: column;
     justify-content: flex-start;
-    align-items: stretch;
+    align-items: center;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -241,7 +241,7 @@ body {
     border-radius: 16px;
     flex-flow: column;
     justify-content: flex-start;
-    align-items: stretch;
+    align-items: center;
     width: 100%;
     max-width: 400px;
     margin: 10px auto;
@@ -343,7 +343,7 @@ body {
   .element-2-tag-block {
     flex-flow: row;
     justify-content: flex-start;
-    align-items: stretch;
+    align-items: center;
     margin-top: 8px;
     margin-bottom: 8px;
     display: flex;

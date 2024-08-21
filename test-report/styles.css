@@ -35,7 +35,6 @@ body {
 
 
 /*CHAPTER*/
-/* Chapter Start Header */
 /* Define styles for all pages */
 @page {
     size: A4;
@@ -65,11 +64,13 @@ body {
     justify-content: center;
     color: white;
     text-align: center;
+    position: relative; /* Ensure header is positioned relative to its container */
 }
 
 .chapter-start .chapter-header h1 {
     margin: 0;
     font-size: 24pt;
+    z-index: 1; /* Ensure text is above the background image */
 }
 
 /* Define styles for subsequent pages */
@@ -90,6 +91,7 @@ body {
     width: 100%;
     margin: 0; /* No margins */
     padding: 0; /* No padding */
+    position: relative; /* Ensure subheader is positioned relative to its container */
 }
 
 /* General Styles for paragraphs */

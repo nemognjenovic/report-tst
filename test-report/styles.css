@@ -47,8 +47,10 @@ body {
     margin: 0; /* Remove margins for chapter start */
 }
 
+/* Styles for chapter start content */
 .chapter-start {
     page: chapter-start;
+    padding: 0; /* Ensure no padding */
 }
 
 .chapter-start .chapter-header {
@@ -59,18 +61,15 @@ body {
     width: 100%;
     margin: 0; /* No margins */
     padding: 0; /* No padding */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    position: relative; /* Ensure header is positioned relative to its container */
+    position: fixed; /* Ensure header stays at the top of the page */
+    top: 0;
+    left: 0;
 }
 
 .chapter-start .chapter-header h1 {
     margin: 0;
     font-size: 24pt;
-    z-index: 1; /* Ensure text is above the background image */
+    color: white;
 }
 
 /* Define styles for subsequent pages */
@@ -79,8 +78,10 @@ body {
     margin: 20mm; /* Regular margins for content pages */
 }
 
+/* Styles for chapter content pages */
 .chapter-content {
     page: chapter-content;
+    padding: 0; /* Ensure no padding */
 }
 
 .chapter-content .chapter-subheader {
@@ -91,7 +92,9 @@ body {
     width: 100%;
     margin: 0; /* No margins */
     padding: 0; /* No padding */
-    position: relative; /* Ensure subheader is positioned relative to its container */
+    position: fixed; /* Ensure subheader stays at the top of the page */
+    top: 0;
+    left: 0;
 }
 
 /* General Styles for paragraphs */

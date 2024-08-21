@@ -1,23 +1,29 @@
 /* Define styles for the cover page only */
 @page :first {
     size: A4;
-    margin: 0; /* No margins to make the cover image cover the entire page */
+    margin: 0; /* No margins for the cover page */
+}
+
+body {
+    margin: 0; /* Ensure body has no margin to avoid unexpected spacing */
 }
 
 .cover-page {
-    height: 100vh; /* Full viewport height to cover the whole page */
+    width: 210mm; /* A4 width */
+    height: 297mm; /* A4 height */
     background-image: url('cover-image.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0; /* No padding */
+    position: absolute; /* Ensures full page coverage */
 }
 
-.cover-page h1, p {
+.cover-text {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     padding: 20px;
     border-radius: 5px;

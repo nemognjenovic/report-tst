@@ -272,21 +272,10 @@ body {
   }
 
   .element-2 {
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     width: 100%;
     margin-top: 16px;
     margin-bottom: 16px;
-    display: flex;
-  }
-  
-  .element-2._75-width {
-    max-width: 75%;
-  }
-  
-  .element-2._30-width {
-    max-width: 30%;
+    display: block;
   }
   
   .element-2-heading {
@@ -345,7 +334,8 @@ body {
     margin-bottom: 8px;
     display: grid;
     grid-template-columns: auto auto auto;
-  }
+    max-width: fit-content;
+    }
   
   .element-2-paragraph {
     color: #333;
@@ -359,10 +349,10 @@ body {
   }
   
   .element-3 {
-    flex-flow: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 70% 30%;
     align-items: center;
-    display: flex;
+
   }
   
   .element-2-zodiac {

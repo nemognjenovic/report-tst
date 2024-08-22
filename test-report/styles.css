@@ -214,6 +214,14 @@ body {
     max-width: 400px;
     margin: 10px 0 10px auto;
   }
+
+  .button-holder {
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+  }
   
   .button {
     color: #fff;
@@ -300,9 +308,11 @@ body {
     text-align: center;
     border: 1px solid #2936be;
     border-radius: 64px;
-    display: grid;
+    /*display: grid;
     justify-content: center;
     align-items: center;
+    */
+    display: block;
     margin-left: 4px;
     margin-right: 4px;
     padding: 8px 12px;
@@ -392,7 +402,8 @@ body {
   
   .element-4-heading-2 {
     color: #333;
-    text-align: left;
+    text-align: center;
+    width: 100%;
     margin: 20px auto 10px;
     font-size: 24px;
     font-weight: 700;
@@ -403,4 +414,3 @@ body {
     width: 200px;
     margin: 16px auto;
   }
-  

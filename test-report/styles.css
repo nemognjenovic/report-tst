@@ -259,7 +259,7 @@ body {
   
   .element-1-icon {
     width: 40px;
-    margin-left: 10px;
+    margin-left: auto;
   }
   
   .element-1-paragraph {
@@ -341,12 +341,10 @@ body {
   }
   
   .element-2-tag-block {
-    flex-flow: row;
-    justify-content: flex-start;
-    align-items: center;
     margin-top: 8px;
     margin-bottom: 8px;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
   
   .element-2-paragraph {

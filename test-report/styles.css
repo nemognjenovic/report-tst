@@ -364,9 +364,9 @@ body {
   
   .element-3 {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 50% 30%;
     align-items: center;
-
+    justify-content: space-between;
   }
   
   .element-2-zodiac {

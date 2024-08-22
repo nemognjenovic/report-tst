@@ -308,14 +308,13 @@ body {
     text-align: center;
     border: 1px solid #2936be;
     border-radius: 64px;
-    display: inline-block;
+    display: block;
+    margin-left: 4px;
+    margin-right: 4px;
     padding: 8px 12px;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-    width: auto; 
-    text-align: center; 
-    vertical-align: middle;
   }
   
   .tag.red {
@@ -342,7 +341,6 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
     max-width: fit-content;
-    grid-column-gap: 8px;
     }
 
   .element-2-tag-block-2c {

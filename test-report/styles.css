@@ -23,7 +23,8 @@
     }
 
     @bottom-center {
-        content: "cosmicorion.com";
+        content: "domain.com";
+        margin-top: 12px;
         font-family: Arial, sans-serif;
         font-size: 0.9rem;
         color: #333;
@@ -315,6 +316,8 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+    vertical-align: middle;
+    text-align: center;
   }
   
   .tag.red {

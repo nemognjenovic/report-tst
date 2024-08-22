@@ -346,6 +346,10 @@ body {
     grid-template-columns: auto auto auto;
     max-width: fit-content;
     }
+
+  .element-2-tag-block-2c {
+    grid-template-columns: auto auto;
+  }
   
   .element-2-paragraph {
     color: #333;

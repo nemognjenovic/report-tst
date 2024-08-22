@@ -1,19 +1,17 @@
-/* Default styles for all pages */
 @page {
     size: A4;
     margin: 20mm;
 }
 
-/* Define styles for the header image on all pages except the first */
 @page {
     @top-left {
         content: "";
         display: block;
         background-image: url('chapter-subheader-image.jpg');
-        background-size: 100% 28px; /* Scale the image to 100% width and 28px height */
+        background-size: 100% 28px;
         background-repeat: no-repeat;
-        height: 28px; /* Height of the header image */
-        width: 100%; /* Width of the header image spans the full page width */
+        height: 28px; 
+        width: 100%;
         margin: 0;
         padding: 0;
         padding-top: 28px;
@@ -30,31 +28,32 @@
         color: #333;
     }
 }
+
 footer {
     position: running(footer);
 }
-/* Exclude the header image from the first page */
+
 @page :first {
-    margin: 0mm; /* Ensure no extra margin for the first page */
+    margin: 0mm; 
     @top-left {
-        content: none; /* Remove the header image from the first page */
+        content: none; 
     }
     @bottom-center {
-        content: none; /* Remove the header image from the first page */
+        content: none; 
     }
 }
 
-/* Style for body to ensure no extra margins */
+
 body {
     margin: 0;
-    padding-top: 0px; /* Ensure content does not overlap the header image */
+    padding-top: 0px; 
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 }
 
 /* Cover Page */
 .cover-page {
-    width: 210mm; /* A4 width */
-    height: 297mm; /* A4 height */
+    width: 210mm; 
+    height: 297mm; 
     background-image: url('cover-image.jpg');
     background-size: cover;
     background-position: center;
@@ -64,19 +63,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Ensures full page coverage */
+    position: relative;
 }
 
 .cover-text {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px;
     border-radius: 5px;
     width: 100%;
-    max-width: 600px; /* Adjust width as needed */
+    max-width: 600px; 
     text-align: center;
 }
 
-/**/
+/*chapters*/
 
 .content-page {
     display: block;

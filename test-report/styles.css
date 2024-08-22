@@ -198,6 +198,11 @@ body {
     line-height: 22px;
   }
   
+  .image-holder {
+    width: 100%;
+    display: grid;
+  }
+
   .image-c {
     width: 100%;
     max-width: 400px;
@@ -309,17 +314,21 @@ body {
     text-align: center;
     border: 1px solid #2936be;
     border-radius: 64px;
-    display: block;
+    display: grid;
+    align-items: center;
+    justify-content: center;
     margin-left: 4px;
     margin-right: 4px;
     padding: 8px 12px;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-    vertical-align: middle;
-    text-align: center;
   }
   
+  .tag p {
+    margin: 0;
+  }
+
   .tag.red {
     color: #360d0d;
     background-color: #f5acac;
@@ -344,6 +353,7 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
     max-width: fit-content;
+    width: 20%;
     }
 
   .element-2-tag-block-2c {

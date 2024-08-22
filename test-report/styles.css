@@ -222,7 +222,6 @@ body {
   }
 
   .button-holder {
-    width: 100%;
     margin: 20px;
     padding: 20px;
     display: grid;
@@ -350,9 +349,9 @@ body {
     width: fit-content;
     }
 
-  .element-2-tag-block-2c {
+  /*.element-2-tag-block-2c {
     grid-template-columns: auto auto;
-  }
+  }*/
   
   .element-2-paragraph {
     color: #333;

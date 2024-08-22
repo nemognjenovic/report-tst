@@ -80,6 +80,7 @@ body {
 
 .content-page {
     display: block;
+    page-break-before: always;
   } 
 
 .heading-1 {

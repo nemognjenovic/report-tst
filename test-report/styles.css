@@ -384,8 +384,7 @@ body {
     color: #2936be;
     text-align: center;
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin: 20px auto 10px;
     font-size: 32px;
     font-weight: 700;
     line-height: 36px;
@@ -394,17 +393,14 @@ body {
   .element-4-heading-2 {
     color: #333;
     text-align: left;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin: 20px auto 10px;
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
   }
   
-  .element-4-separator {
-    object-fit: cover;
-    width: 100%;
-    max-width: 200px;
-    height: 50px;
+  .element-4-separator { 
+    width: 200px;
+    margin: 16px auto;
   }
   

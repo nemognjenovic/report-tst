@@ -293,20 +293,14 @@ body {
   }
   
   .element-2-heading {
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
     color: #2936be;
     text-align: left;
-    flex-flow: row;
-    justify-content: flex-start;
-    align-items: center;
     width: 100%;
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 32px;
     font-weight: 700;
     line-height: 36px;
-    display: flex;
   }
   
   .tag {
@@ -323,6 +317,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+    max-width: fit-content;
   }
   
   .tag p {
@@ -352,7 +347,7 @@ body {
     margin-bottom: 8px;
     display: grid;
     grid-template-columns: auto auto auto;
-    max-width: fit-content;
+    width: fit-content;
     }
 
   .element-2-tag-block-2c {
@@ -378,6 +373,7 @@ body {
   }
   
   .element-2-zodiac {
+    margin-left: 10px;
     color: #be2929;
   }
   
@@ -392,14 +388,6 @@ body {
     margin: 16px auto;
     padding: 16px;
 
-  }
-  
-  .element-4._75-width {
-    max-width: 75%;
-  }
-  
-  .element-4._30-width {
-    max-width: 30%;
   }
   
   .element-4-heading {
